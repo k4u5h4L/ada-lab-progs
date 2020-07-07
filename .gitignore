@@ -1,2 +1,4 @@
 a.out
 /*.out
+programs/a.out
+programs/*.out
