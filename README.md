@@ -6,28 +6,28 @@ These programs are done in C.
 
 The programs are:
 
-* Breadth-first search
+* [Breadth-first search](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/bfs.c)
 
-* Depth-first search
+* [Depth-first search](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/dfs.c)
 
-* Mergesort
+* [Mergesort](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/mergesort.c)
 
-* Quicksort
+* [Quicksort](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/quicksort.c)
 
-* Heapsort
+* [Heapsort](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/heapsort.c)
 
-* Horsepool's algorithm
+* [Horsepool's algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/new-progs/horsepool.c)
 
-* Warshall's algorithm
+* [Warshall's algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/warshall.c)
 
-* Floyd's algorithm
+* [Floyd's algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/floyd.c)
 
-* Knapsack algorithm
+* [Knapsack algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/new-progs/knapsack.c)
 
-* Djistra's algorithm
+* [Djistra's algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/new-progs/djikstra.c)
 
-* Prim's algorithm
+* [Prim's algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/new-progs/prim.c)
 
-* Kruskal's algorithm
+* [Kruskal's algorithm](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/new-progs/kruskal.c)
 
-* N-queen's method
+* [N-queen's method](https://github.com/k4u5h4L/ada-lab-progs/blob/master/programs/new-progs/n-queens.c)
