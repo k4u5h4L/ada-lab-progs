@@ -14,13 +14,15 @@ int main(void) {
             scanf("%d", &a[i][j]);
     printf("Enter the source vertex \n");
     scanf("%d", &v);
-    for (i = 1; i <= n; i++) 
+    // start from here
+    for (i = 1; i <= n; i++) {
         s[i] = 0;
         d[i] = a[v][i];
+    }
     
     d[v] = 0;
     s[v] = 1;
-    for (k = 2; k <= n; k++) 
+    for (k = 2; k <= n; k++) {
         min = 999;
         for(i=1;i<=n;i++) 
             if(s[i]==0 && d[i]<min) {
@@ -33,9 +35,8 @@ int main(void) {
                     if(d[i] > (d[u] + a[u][i]))
                         d[i] = d[u] + a[u][i];
                 }
-            
-        
-    
+    }
+         
     printf("The shortest distance from %d is \n",v);
     for(i=1;i<=n;i++)
         printf("%d --> %d = %d\n",v,i,d[i]);
