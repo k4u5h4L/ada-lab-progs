@@ -9,17 +9,17 @@ void prim() {
     while(count < n - 1) {
         min = 999;
         for (i = 1; i <= n; i++)
-        for (j = 1; j <= n; j++)
-        if (visited[i] && !visited[j] && min > c[i][j]) { /* if i is visited but j is not visited and c[i][j] < min*/
-            min = c[i][j]; /* assign c[i][j] as minimum cost*/
-            a = i;
-            b = j;
-        }
+            for (j = 1; j <= n; j++)
+                if (visited[i] && !visited[j] && min > c[i][j]) { /* if i is visited but j is not visited and c[i][j] < min*/
+                    min = c[i][j]; /* assign c[i][j] as minimum cost*/
+                    a = i;
+                    b = j;
+                }
         printf("%d ---> %d = %d\n", a, b, c[a][b]); /* prints each edge in the MST and its cost */
         cost += c[a][b]; /* adds the minimum cost */
         visited[b] = 1;
         count++;
-    } //end while
+    }
     printf("Total cost of Spanning tree is %d", cost); /* cost holds the minimum cost of the MST */
 }
 
@@ -33,4 +33,6 @@ int main(void) {
             visited[i] = 0;
     }
     prim();
+    
+    return 0;
 }
