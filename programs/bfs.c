@@ -24,6 +24,7 @@ int bfs(int n) {
     printf("\n");
 }
 
+
 int main(void) {
     struct timeval tv1, tv2;
     int i, j, n;

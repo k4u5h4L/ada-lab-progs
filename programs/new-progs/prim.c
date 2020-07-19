@@ -6,7 +6,7 @@ void prim() {
     int min, b, a, k, count = 0, cost = 0;
     min = 999;
     visited[1] = 1; /* 1st vertex is visited */
-    while(count < n - 1) {
+    while (count < n - 1) {
         min = 999;
         for (i = 1; i <= n; i++)
             for (j = 1; j <= n; j++)
@@ -30,7 +30,7 @@ int main(void) {
     for (i = 1; i <= n; i++) {
         for (j = 1; j <= n; j++)
             scanf("%d", &c[i][j]);
-            visited[i] = 0;
+            // visited[i] = 0;
     }
     prim();
     

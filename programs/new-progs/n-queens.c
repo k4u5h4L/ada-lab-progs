@@ -6,7 +6,7 @@ int count = 0, x[100];
 int place(int k, int i) { // checks whether kth queen can be placed in ith column
     int j;
     for (j = 1; j < k; j++) // x[j]=i means same column, (x[j]-j) =( j-k) means same diagonal
-        if ((x[j] == i) ||(abs(x[j] - i) == abs(j - k)))
+        if ((x[j] == i) || (abs(x[j] - i) == abs(j - k)))
             return 0; // kth queen cannot be placed in ith column
     return 1;
 }

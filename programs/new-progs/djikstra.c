@@ -24,22 +24,22 @@ int main(void) {
     s[v] = 1;
     for (k = 2; k <= n; k++) {
         min = 999;
-        for(i=1;i<=n;i++) 
-            if(s[i]==0 && d[i]<min) {
-                min=d[i];
-                u=i;
+        for (i = 1; i <= n; i++) 
+            if (s[i] == 0 && d[i] < min) {
+                min = d[i];
+                u = i;
             }
-            s[u] = 1;
-            for (i = 1; i <= n; i++) 
-                if (s[i] == 0) {
-                    if(d[i] > (d[u] + a[u][i]))
-                        d[i] = d[u] + a[u][i];
-                }
+        s[u] = 1;
+        for (i = 1; i <= n; i++) 
+            if (s[i] == 0) {
+                if (d[i] > (d[u] + a[u][i]))
+                    d[i] = d[u] + a[u][i];
+            }
     }
          
-    printf("The shortest distance from %d is \n",v);
-    for(i=1;i<=n;i++)
-        printf("%d --> %d = %d\n",v,i,d[i]);
+    printf("The shortest distance from %d is \n", v);
+    for(i = 1; i <= n; i++)
+        printf("%d --> %d = %d\n", v, i, d[i]);
 
     return 0;
 }
