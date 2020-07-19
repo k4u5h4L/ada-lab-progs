@@ -15,7 +15,7 @@ void prim() {
                     a = i;
                     b = j;
                 }
-        printf("%d ---> %d = %d\n", a, b, c[a][b]); /* prints each edge in the MST and its cost */
+        printf("%d --> %d = %d\n", a, b, c[a][b]); /* prints each edge in the MST and its cost */
         cost += c[a][b]; /* adds the minimum cost */
         visited[b] = 1;
         count++;

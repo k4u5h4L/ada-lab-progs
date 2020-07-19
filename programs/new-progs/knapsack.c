@@ -9,12 +9,10 @@ int max(int a, int b) {
 void knapsack() {
     for (i = 1; i <= n; i++) {
         for(j = 1; j <= capacity; j++) {
-            if(i == 0 || j == 0)
-                V[i][j] = 0;
-            else if(w[i] > j)
+            if(w[i] > j)
                 V[i][j] = V[i - 1][j];
             else
-                V[i][j] = max(V[i - 1][j],V[i - 1][j - w[i]] + p[i]);
+                V[i][j] = max(V[i - 1][j], V[i - 1][j - w[i]] + p[i]);
             max_profit = V[i][j];
         }
     }

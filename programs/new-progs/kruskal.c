@@ -45,7 +45,7 @@ int main(void) {
         }
         cost[x][y] = cost[y][x] = 999;
     }
-    printf("\nThe total cost of minimum spanning tree=%d", tot);
+    printf("\nThe total cost of minimum spanning tree = %d", tot);
 
     return 0;
 }
