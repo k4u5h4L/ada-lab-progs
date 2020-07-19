@@ -4,7 +4,7 @@
 #include <sys/time.h>
 #include <time.h>
 
-void heapsort(int h[], int n) {
+void maxheap(int h[], int n) {
     int i, j, k, v, heap;
     for (i = n/2; i >= 1; i--) {
         k = i;
@@ -27,10 +27,10 @@ void heapsort(int h[], int n) {
     }
 }
 
-void maxheap(int h[], int n) {
+void heapsort(int h[], int n) {
     int temp, i;
     for (i = n; i >= 1; i--) {
-        heapsort(h, i);
+        maxheap(h, i);
         temp = h[1];
         h[1] = h[i];
         h[i] = temp;
@@ -49,7 +49,7 @@ int main(void) {
     }
 
     gettimeofday(&tv1, NULL);
-    maxheap(a, n);
+    heapsort(a, n);
     gettimeofday(&tv2, NULL);
     printf("Sorted elements\n");
     for (i = 1; i <= n; i++) {
