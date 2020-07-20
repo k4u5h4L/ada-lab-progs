@@ -39,9 +39,9 @@ int main(void) {
         find_min();
         flag = check_cycle(x,y);
         if (flag == 1) {
-        printf("\n%d --> %d = %d\n", x, y, cost[x][y]);
-        count++;
-        tot += cost[x][y];
+            printf("\n%d --> %d = %d\n", x, y, cost[x][y]);
+            count++;
+            tot += cost[x][y];
         }
         cost[x][y] = cost[y][x] = 999;
     }
