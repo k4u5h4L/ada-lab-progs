@@ -35,6 +35,8 @@ int main(void) {
             scanf("%d", &cost[i][j]);
             parent[j] = 0;
         }
+
+    // start here
     while (count != n - 1 && min != 999) {
         find_min();
         flag = check_cycle(x,y);
