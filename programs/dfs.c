@@ -9,15 +9,12 @@ int visited[10];
 int dfs(int v, int n, int a[][n]) {
     int i;
     visited[v] = 1;
+    printf("Visited node: %d\n", v);
 
     for (i = 0; i < n; i++) {
         if (a[v][i] && !visited[i]) {
-            printf("%d -> %d\n", v, i);
+            dfs(i, n, a);
         }
-    }
-
-    if (v < (n - 1)) {
-        dfs(v + 1, n, a);
     }
 }
 
