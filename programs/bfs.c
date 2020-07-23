@@ -9,6 +9,7 @@ int visited[20];
 
 void bfs(int v, int n, int a[][n]) {
     int i;
+    visited[v] = 1;
 
     for (i = 0; i < n; i++) {
         if (a[v][i] && !visited[i]) {
